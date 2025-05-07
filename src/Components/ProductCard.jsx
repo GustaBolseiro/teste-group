@@ -1,6 +1,8 @@
-import { Buttons } from "../Components/Buttons";
+import { Buttons } from "./Buttons";
 
 const ProductCard = ({products}) => {
+    if(!products || !Array.isArray(products))
+      return <p>Carregando itens...</p>;
     return (
         <div>
             <h1>Produtos</h1>

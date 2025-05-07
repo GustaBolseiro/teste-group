@@ -1,9 +1,9 @@
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "../Components/firebase";
 import { useEffect, useState } from "react";
-import ProductCard from "../Pages/ProductCard";
+import ProductCard from "../Components/ProductCard";
 
-const ProductLogic = () => {
+const ProductPage = () => {
   const [products, setProducts] = useState([]);
 
   const readProducts = async () => {
@@ -27,4 +27,4 @@ const ProductLogic = () => {
   );
 }
 
-export default ProductLogic;
+export default ProductPage;
