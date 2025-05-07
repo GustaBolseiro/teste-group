@@ -4,7 +4,7 @@ import UserDetails from "../Components/UserDetails";
 import UserList from "../Components/UsersList";
 import Dados from "../Pages/Dados";
 import Home from "../Pages/Home";
-import ProductCard from "../Pages/ProductCard"
+import ProductPage from "../Pages/ProductPage";
 
 
 
@@ -13,7 +13,7 @@ export const MainRouter = () => {
         <BrowserRouter >
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='produtos' element={<ProductCard/>}/>
+            <Route path='produtos' element={<ProductPage/>}/>
             <Route path='usuarios' element={<UserList/>}/>
             <Route path='usuarios/:id' element={<UserDetails />} />
             <Route path='dados' element={<Dados />}/>
